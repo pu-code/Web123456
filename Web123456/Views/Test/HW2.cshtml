@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "HW2";
+}
+
+<h2>HW2</h2>
+
+@using (Html.BeginForm("test", "test", FormMethod.Post))
+{
+    <p>
+        帳號:
+        @Html.TextBox("account")
+    </p>
+
+    <p>
+        密碼:
+        @Html.Password("password")
+    </p>
+
+    <p>
+        性別:
+        @Html.RadioButton("gender", 1)男生
+        @Html.RadioButton("gender", 2)女生
+    </p>
+
+    <p>
+        性別:
+        @Html.CheckBox("A") 閱讀
+        @Html.CheckBox("B") 游泳
+        @Html.CheckBox("C") 看電影
+    </p>
+
+    <p>
+        自我介紹:
+        @Html.TextArea("about")
+    </p>
+}

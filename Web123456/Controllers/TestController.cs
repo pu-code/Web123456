@@ -18,5 +18,10 @@ namespace Web123456.Controllers
         {
             return View();
         }
+
+        public ActionResult HW2()
+        {
+            return View();
+        }
     }
 }
