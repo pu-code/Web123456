@@ -23,5 +23,13 @@ namespace Web123456.Controllers
         {
             return View();
         }
+
+        public ActionResult HW3()
+        {
+            ViewBag.a = 1;
+            ViewData["b"] = 2;
+
+            return View();
+        }
     }
 }

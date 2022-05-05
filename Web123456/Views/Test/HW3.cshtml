@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "HW3";
+}
+
+<h2>HW3 test</h2>
+
+<p>a+a=@(ViewBag.a + ViewBag.a)</p>
+<p>b+b=@((int)ViewData["b"]+ (int)ViewData["b"])</p>
+
+@{
+    string[] fruits = { "蘋果", "香蕉", "荔枝", "鳳梨", "西瓜" };
+}
+
+<ol>
+    @foreach (var item in fruits)
+    {
+        <li>@item</li>
+    }
+</ol>

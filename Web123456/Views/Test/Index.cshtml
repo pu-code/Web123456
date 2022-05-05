@@ -22,5 +22,21 @@
 </ol>
 
 
+@DateTime.Now
 
+@{ 
+    var amount = 100;
+    var isValid = true;
+}
 
+<div>@amount</div>
+
+@if (isValid)
+{
+    <div>isvalid:@isValid</div>
+}
+
+@for (int i = 1; i <= 10; i++)
+{
+    <p>i@(i)</p>
+}
